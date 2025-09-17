@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>🌍 Rastreo en Tiempo Real + Mashup 🎵</title>
+</head>
+<body>
+  <div class="container">
+    <h1>🗺️ Rastreo en Tiempo Real + Mashup 🎵</h1>
+    <p class="description">
+      Este mapa actualiza su posición cada 2 segundos con ubicaciones aleatorias del mundo. 
+      ¡Explorá diferentes lugares y disfrutá del sonido mashup! 🎧
+    </p>
+    
+    <div class="content-wrapper">
+      <div id="map"></div>
+      
+      <div class="info-container">
+        <div class="info-card">
+          <h3>📍 Ubicación Actual</h3>
+          <p id="location-info">Latitud: --, Longitud: --</p>
+          <p id="location-name">Cargando ubicación...</p>
+        </div>
+        
+        <div class="info-card">
+          <h3>⏱️ Estado del Sistema</h3>
+          <p id="status">Sistema iniciado - Listo para rastrear</p>
+          <p id="update-counter">Actualizaciones: 0</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="btn-sound" class="btn-sound">🎵 Reproducir Mashup</button>
+      <button id="btn-location" class="btn-location">📍 Mi Ubicación Real</button>
+      <button id="btn-stop" class="btn-stop">⏸️ Pausar Rastreo</button>
+      <button id="btn-start">▶️ Reanudar Rastreo</button>
+    </div>
+  </div>
+
+  <audio id="audio" preload="auto">
+    <source src="assets/sonido_mashup.mp3" type="audio/mpeg">
+    <source src="assets/sonido_mashup.wav" type="audio/wav">
+    <source src="assets/sonido_mashup.m4a" type="audio/mp4">
+    </audio>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH1JRV5RqeitnUDWMcckW38Us1qg19550&callback=initMap" async defer></script>
+  <script src="script.js"></script>
+</body>
+</html>
