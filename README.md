@@ -200,11 +200,3 @@ La aplicación es completamente responsiva y funciona en dispositivos móviles. 
 ### Error de geolocalización
 - La geolocalización requiere HTTPS en la mayoría de navegadores modernos
 - Asegúrate de permitir el acceso a la ubicación cuando el navegador lo solicite
-
-## 📄 Licencia
-
-Este proyecto es de código abierto. Puedes usarlo, modificarlo y distribuirlo libremente.
-
----
-
-¡Disfruta explorando el mundo con tu rastreador musical! 🎵🌍
